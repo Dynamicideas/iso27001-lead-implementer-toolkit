@@ -1,0 +1,7 @@
+Control ID,Control Name,Applicable (Yes/No),Justification / Implementation Method,Evidence Artifact / Verification Source
+A.5.15,Access Control,Yes,Enforced via strict Role-Based Access Control (RBAC) maps linked to corporate identity providers.,IAM Group assignment matrix and Active Directory configuration logs.
+A.5.19,Information Security in Supplier Relationships,Yes,All third-party vendors must submit annual SOC 2 Type II audits or undergo formal TPRM risk reviews before procurement.,Completed Vendor Security Assessment Reports (SAR) hosted in vendor risk registry.
+A.8.20,Network Security,Yes,Production networks isolated via AWS Virtual Private Clouds (VPC) with security groups dropping default traffic.,Infrastructure-as-Code Terraform deployment configurations.
+A.8.24,Use of Cryptography,Yes,All data-at-rest encrypted using AES-256 BitLocker/AWS KMS; data-in-transit secured via mandatory TLS 1.3.,Cryptographic key configuration logs and system encryption status reports.
+A.8.28,Secure Coding,Yes,Development teams follow OWASP Top 10 guidelines with automated SAST/DAST code scanning integrated into deployment pipelines.,SonarQube scan output logs and peer-review sign-off tickets.
+A.8.30,Outsourced Development,No,Organization maintains a strict zero-outsourcing engineering policy. All development is conducted by vetted internal staff.,Corporate HR employment logs and organizational architecture charts.
