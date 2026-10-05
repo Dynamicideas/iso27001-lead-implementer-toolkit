@@ -5,3 +5,17 @@ A.8.20,Network Security,Yes,Production networks isolated via AWS Virtual Private
 A.8.24,Use of Cryptography,Yes,All data-at-rest encrypted using AES-256 BitLocker/AWS KMS; data-in-transit secured via mandatory TLS 1.3.,Cryptographic key configuration logs and system encryption status reports.
 A.8.28,Secure Coding,Yes,Development teams follow OWASP Top 10 guidelines with automated SAST/DAST code scanning integrated into deployment pipelines.,SonarQube scan output logs and peer-review sign-off tickets.
 A.8.30,Outsourced Development,No,Organization maintains a strict zero-outsourcing engineering policy. All development is conducted by vetted internal staff.,Corporate HR employment logs and organizational architecture charts.
+
+
+
+
+## Annex A Control Status Table (Advanced Implementation Matrix)
+
+| Control ID | Control Name | Justification (Why it is included/excluded) | Implementation Status | Evidence / Artifact Reference |
+| :--- | :--- | :--- | :---: | :--- |
+| **A.5.15** | Access control | Mandatory to protect client database assets containing PII. | **Implemented** | IAM Role Matrix, MFA Policy |
+| **A.5.30** | ICT readiness for business continuity | Critical for ensuring cloud architecture high availability. | **In Progress** | AWS Multi-AZ Deployment Plan |
+| **A.6.8** | Information security in project management | Required to ensure security is built into the software development lifecycle. | **Implemented** | CI/CD GitGuardian Scanning |
+| **A.7.4** | Physical security monitoring | **Excluded:** The organization operates entirely remotely with no physical corporate offices. | **Excluded** | N/A - Remote Workforce Policy |
+| **A.8.20** | Network security | Vital to prevent unauthorized lateral movement inside our production VPC. | **Implemented** | AWS Security Group Logs |
+
